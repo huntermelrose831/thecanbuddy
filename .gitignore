@@ -1,0 +1,25 @@
+# Node & build
+node_modules/
+dist/
+build/
+
+# Env / secrets
+*.env
+backend/.env
+.env.local
+
+# OS / misc
+.DS_Store
+npm-debug.log
+yarn-error.log
+logs/
+*.log
+
+# Ignore large or nested project dirs if they exist (adjust as needed)
+Externship/
+frontend-authorization-demo/
+instagram-dm-tool/
+landingstripe/
+mood-tracker-app/
+myportfolio/
+newsExplorerFrontend/
