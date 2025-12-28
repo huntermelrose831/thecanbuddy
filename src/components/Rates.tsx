@@ -15,20 +15,6 @@ const plans = [
       "50% off your first service",
       "Cancel anytime",
     ],
-    popular: false,
-  },
-  {
-    name: "Quarterly Cleaning",
-    price: "$45",
-    period: "for 2 cans",
-    description: "Once every 3 months",
-    promo: "50% OFF first service with code: FirstClean50",
-    features: [
-      "$45.00 for 2 cans cleaned once per quarter",
-      "Any additional can $10.00 each",
-      "50% off your first service",
-      "Perfect for light usage",
-    ],
     popular: true,
   },
   {
@@ -36,15 +22,28 @@ const plans = [
     price: "$37.50",
     period: "for 2 cans",
     description: "Once every other month",
-    promo: "50% OFF first service with code: FirstClean50",
+    promo: null,
     features: [
       "$37.50 for 2 cans cleaned every other month",
       "Any additional can $10.00 each",
-      "50% off your first service",
       "Great balance of value",
     ],
     popular: false,
   },
+  {
+    name: "Quarterly Cleaning",
+    price: "$45",
+    period: "for 2 cans",
+    description: "Once every 3 months",
+    promo: null,
+    features: [
+      "$45.00 for 2 cans cleaned once per quarter",
+      "Any additional can $10.00 each",
+      "Perfect for light usage",
+    ],
+    popular: false,
+  },
+
   {
     name: "Bi-Annually Cleaning",
     price: "$60",
@@ -86,17 +85,9 @@ const Rates = () => {
             Flexible Pricing Plans
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            All plans include eco-friendly cleaning and professional service
+            Simple pricing, no surprises — starts at{" "}
+            <span className="text-accent font-extrabold">$30</span> for 2 cans.
           </p>
-          <div className="inline-block bg-accent/10 border-2 border-accent rounded-lg px-6 py-3 mt-4">
-            <p className="text-lg font-semibold text-accent">
-              Use code{" "}
-              <span className="bg-accent text-white px-3 py-1 rounded font-mono">
-                FirstClean50
-              </span>{" "}
-              for 50% off your first recurring service!
-            </p>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
@@ -131,7 +122,7 @@ const Rates = () => {
                   {plan.description}
                 </p>
                 <div className="flex items-baseline justify-center gap-1">
-                  <span className="text-4xl font-bold text-accent">
+                  <span className="text-5xl md:text-6xl font-extrabold text-accent">
                     {plan.price}
                   </span>
                   <span className="text-sm text-muted-foreground">
@@ -167,12 +158,17 @@ const Rates = () => {
         <div className="mt-12 text-center space-y-4">
           <p className="text-muted-foreground text-lg">
             Additional cans:{" "}
-            <span className="text-accent font-semibold">$10.00 each</span>
+            <span className="text-accent font-extrabold">$10.00 each</span>
+          </p>
+          <p className="text-muted-foreground text-lg">
+            Optional food-scrap bins:{" "}
+            <span className="text-accent font-extrabold">$5.00 each</span>{" "}
+            (optional add-on)
           </p>
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            All recurring plans eligible for 50% off first service. One-time
-            cleaning includes $50 credit towards recurring plan if you upgrade
-            within 3 months.
+            Monthly plan eligible for 50% off first service. One-time cleaning
+            includes $50 credit towards a recurring plan if you upgrade within 3
+            months.
           </p>
         </div>
       </div>

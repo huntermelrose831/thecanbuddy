@@ -4,11 +4,19 @@ import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const Contact = () => {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [foodScrapCount, setFoodScrapCount] = useState<number>(0);
+
+  useEffect(() => {
+    const count = Number(sessionStorage.getItem("foodScrapCount") || 0);
+    if (count > 0) {
+      setFoodScrapCount(count);
+    }
+  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,8 +43,12 @@ const Contact = () => {
       if (!response.ok) throw new Error("Failed to send email");
 
       toast({
-        title: "Message sent successfully!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Thanks — request received!",
+        description: `We'll call or email you within 24 hours to confirm.${
+          foodScrapCount > 0
+            ? ` Includes ${foodScrapCount} food-scrap bin(s).`
+            : ""
+        }`,
       });
 
       e.currentTarget.reset();
@@ -156,6 +168,23 @@ const Contact = () => {
                 />
               </div>
 
+              {foodScrapCount > 0 && (
+                <div className="p-4 bg-accent/10 rounded-md text-accent font-medium">
+                  You selected{" "}
+                  <span className="font-bold">{foodScrapCount}</span> food-scrap
+                  bin(s) at <span className="font-bold">$5.00</span> each. This
+                  will be included in your quote.
+                </div>
+              )}
+
+              {foodScrapCount > 0 && (
+                <input
+                  type="hidden"
+                  name="foodScrapBins"
+                  value={foodScrapCount}
+                />
+              )}
+
               <Button
                 type="submit"
                 size="lg"
@@ -177,7 +206,12 @@ const Contact = () => {
                   <h3 className="font-semibold text-lg text-primary mb-1">
                     Phone
                   </h3>
-                  <p className="text-muted-foreground">(831) 331-6174</p>
+                  <a
+                    href="tel:+18313316174"
+                    className="text-muted-foreground hover:text-accent font-medium"
+                  >
+                    (831) 331-6174
+                  </a>
                   <p className="text-sm text-muted-foreground mt-1">
                     Mon-Sat: 8am - 6pm
                   </p>
@@ -194,9 +228,12 @@ const Contact = () => {
                   <h3 className="font-semibold text-lg text-primary mb-1">
                     Email
                   </h3>
-                  <p className="text-muted-foreground">
+                  <a
+                    href="mailto:thecanbuddy8@gmail.com"
+                    className="text-muted-foreground hover:text-accent font-medium"
+                  >
                     thecanbuddy8@gmail.com
-                  </p>
+                  </a>
                   <p className="text-sm text-muted-foreground mt-1">
                     We respond within 24 hours
                   </p>

@@ -63,7 +63,15 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/60">
           <p>
             &copy; {currentYear} The Can Buddy. All rights reserved. | Proudly
-            serving Santa Cruz County
+            serving Santa Cruz County | Created by Hunter Melrose{" "}
+            <a
+              href="https://huntermelrose.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-white"
+            >
+              huntermelrose.dev
+            </a>
           </p>
         </div>
       </div>

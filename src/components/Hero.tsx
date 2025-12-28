@@ -1,17 +1,18 @@
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-blue/20 via-background to-ocean-blue/10 pt-24 pb-16">
-      {/* Background Logo - positioned higher on mobile */}
-      <div
-        className="absolute inset-0 bg-center bg-contain bg-no-repeat opacity-15 md:opacity-20"
-        style={{
-          backgroundImage: "url('/images/canbuddylogo3.png')",
-          backgroundPosition: "center 10%",
-        }}
-      ></div>
-
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-blue/40 via-sky-blue/20 to-ocean-blue/10 pt-24 pb-16">
       {/* Pattern Overlay */}
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMzLjMxNCAwIDYgMi42ODYgNiA2cy0yLjY4NiA2LTYgNi02LTIuNjg2LTYtNiAyLjY4Ni02IDYtNnoiIHN0cm9rZT0iIzBmNzJiYiIgc3Ryb2tlLW9wYWNpdHk9Ii4wNSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9nPjwvc3ZnPg==')] opacity-20"></div>
+
+      {/* Sparkle overlay */}
+      <div
+        className="absolute inset-0 pointer-events-none opacity-10"
+        style={{
+          backgroundImage:
+            "radial-gradient(circle at 20% 30%, rgba(255,255,255,0.7) 0, rgba(255,255,255,0) 6%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.5) 0, rgba(255,255,255,0) 10%)",
+          mixBlendMode: "screen",
+        }}
+      />
 
       <div className="container mx-auto px-4 md:px-8 relative z-10">
         <div className="max-w-5xl mx-auto">
@@ -19,9 +20,9 @@ const Hero = () => {
           <div className="text-center space-y-6 md:space-y-8 animate-fade-in">
             {/* Heading */}
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight px-4">
-              Clean Bins.
+              Residential Can cleaning service in{" "}
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-ocean-blue to-sky-blue mt-2">
-                Happy Home.
+                Santa Cruz, CA
               </span>
             </h1>
 
