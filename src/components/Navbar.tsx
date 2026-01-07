@@ -42,7 +42,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6">
-        <div className="flex items-center justify-between h-16 sm:h-20">
+        <div className="flex items-center justify-between h-16 sm:h-20 max-[480px]:justify-center max-[480px]:relative">
           <motion.div
             className="flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
@@ -52,7 +52,7 @@ const Navbar = () => {
             <img
               src="/images/canbuddylogo3.png"
               alt="The Can Buddy Logo"
-              className="h-10 sm:h-12 w-auto"
+              className="h-16 sm:h-20 w-auto mb-[5px] mix-blend-multiply"
             />
             <span className="text-xl sm:text-2xl font-bold text-primary hidden xs:inline">
               The Can Buddy
@@ -91,7 +91,7 @@ const Navbar = () => {
           </div>
 
           <motion.button
-            className="md:hidden text-primary p-2 hover:bg-sky-blue/10 rounded-lg transition-colors"
+            className="md:hidden text-primary p-2 hover:bg-sky-blue/10 rounded-lg transition-colors max-[480px]:absolute max-[480px]:right-4"
             onClick={() => setIsOpen(!isOpen)}
             whileTap={{ scale: 0.95 }}
           >

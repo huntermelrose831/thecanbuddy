@@ -1,12 +1,11 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Sparkles, CheckCircle2, Clock, Leaf } from "lucide-react";
+import { CheckCircle2, Clock, Leaf } from "lucide-react";
 
 const Hero = () => {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 150]);
   const y2 = useTransform(scrollY, [0, 300], [0, -50]);
-  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
 
   const scrollToContact = () => {
     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
@@ -96,10 +95,7 @@ const Hero = () => {
         }}
       />
 
-      <motion.div
-        className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10"
-        style={{ opacity }}
-      >
+      <motion.div className="container mx-auto px-4 sm:px-6 md:px-8 relative z-10">
         <motion.div
           className="max-w-5xl mx-auto"
           variants={containerVariants}
@@ -108,25 +104,14 @@ const Hero = () => {
         >
           {/* Main Content */}
           <div className="text-center space-y-6 sm:space-y-8 md:space-y-10">
-            {/* Badge */}
-            <motion.div
-              variants={itemVariants}
-              className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md border border-sky-blue/20 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-lg"
-            >
-              <Sparkles className="w-4 h-4 sm:w-5 sm:h-5 text-sky-blue" />
-              <span className="text-xs sm:text-sm font-semibold text-primary">
-                Professional Bin Cleaning Service
-              </span>
-            </motion.div>
-
             {/* Heading with Enhanced Typography */}
             <motion.h1
               variants={itemVariants}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-primary leading-[1.1] px-2 sm:px-4"
             >
-              Residential Can Cleaning
+              Residential Can Cleaning in
               <span className="block mt-2 sm:mt-3 text-transparent bg-clip-text bg-gradient-to-r from-ocean-blue via-sky-blue to-ocean-blue bg-[length:200%_auto] animate-gradient">
-                Santa Cruz, CA
+                Santa Cruz, CA 95060
               </span>
             </motion.h1>
 
@@ -225,6 +210,11 @@ const Hero = () => {
 
       {/* Enhanced Bottom Gradient */}
       <div className="absolute bottom-0 left-0 right-0 h-32 md:h-40 bg-gradient-to-t from-background via-background/50 to-transparent pointer-events-none" />
+
+      {/* Wave Animation */}
+      <div className="hero__wave hero__wave--1"></div>
+      <div className="hero__wave hero__wave--2"></div>
+      <div className="hero__wave hero__wave--3"></div>
     </section>
   );
 };
