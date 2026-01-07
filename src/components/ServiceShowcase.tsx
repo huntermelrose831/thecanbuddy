@@ -3,13 +3,13 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
-    src: "/images/Before-After-Pails3.png",
-    label: "Before / After",
+    src: "/images/boardwalk.png",
+    label: "Boardwalk Cleaning",
     fit: "cover",
   },
-  { src: "/images/before-afterv2.jpeg", label: "Before / After", fit: "cover" },
+  { src: "/images/spraying.png", label: "Process", fit: "cover" },
   {
-    src: "/images/bincleaningprocess.jpeg",
+    src: "/images/mattCleaningCans.jpg",
     label: "Cleaning Process",
     fit: "cover",
   },

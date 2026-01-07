@@ -159,4 +159,28 @@ All colors MUST be HSL.
     opacity: 1;
     transform: translateY(0);
   }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animate-gradient {
+    animation: gradient 3s ease infinite;
+  }
+}
+
+/* Custom utilities for touch targets on mobile */
+@layer utilities {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
 }

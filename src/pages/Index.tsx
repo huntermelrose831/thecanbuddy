@@ -13,12 +13,14 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ScrollAnimate from "@/components/ScrollAnimate";
+import MobileQuickAction from "@/components/MobileQuickAction";
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+      <MobileQuickAction />
       <TrustBadges />
       <ScrollAnimate>
         <ServiceShowcase />

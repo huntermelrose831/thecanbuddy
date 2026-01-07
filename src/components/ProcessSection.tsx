@@ -4,6 +4,7 @@ const ProcessSection = () => {
   const images = [
     "/images/Before-After-Pails3.png",
     "/images/before-afterv2.jpeg",
+    "/images/spraying.png",
     "/images/bincleaningprocess.jpeg",
   ];
 
