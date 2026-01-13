@@ -108,4 +108,4 @@ MIT
 
 ## Contact
 
-For questions or support, visit [The Can Buddy](https://thecanbuddy.com)
+For questions or support, visit [The Can Buddy](https://thecanbuddy.jumpingcrab.com)
