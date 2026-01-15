@@ -13,7 +13,7 @@ const slides = [
     label: "Cleaning Process",
     fit: "cover",
   },
-  { src: "/images/canbuddylogo.png", label: "Our Logo", fit: "contain" },
+  { src: "/images/wavelogo.jpeg", label: "Our Logo", fit: "contain" },
 ];
 
 const ServiceShowcase = () => {
