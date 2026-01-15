@@ -4,14 +4,14 @@ Professional trash can cleaning service website built with Vite, React, TypeScri
 
 ## Features
 
-- 🎨 Beautiful, modern design with ocean-themed color scheme
-- 📱 Fully responsive layout
-- ⚡ Fast performance with Vite
-- 🎯 TypeScript for type safety
-- 🎨 Tailwind CSS for styling
-- 🧩 Reusable UI components with shadcn/ui
-- 🔄 React Router for navigation
-- 📝 Contact form with toast notifications
+-  Beautiful, modern design with ocean-themed color scheme
+-  Fully responsive layout
+- Fast performance with Vite
+- TypeScript for type safety
+-  Tailwind CSS for styling
+-  Reusable UI components with shadcn/ui
+-  React Router for navigation
+-  Contact form with toast notifications
 
 ## Getting Started
 
@@ -108,4 +108,4 @@ MIT
 
 ## Contact
 
-For questions or support, visit [The Can Buddy](https://thecanbuddy.com)
+For questions or support, visit [The Can Buddy](https://thecanbuddy.jumpingcrab.com)
