@@ -22,7 +22,8 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    const formData = new FormData(e.currentTarget);
+    const form = e.currentTarget;
+    const formData = new FormData(form);
     const data = {
       firstName: formData.get("firstName"),
       lastName: formData.get("lastName"),
@@ -51,7 +52,7 @@ const Contact = () => {
         }`,
       });
 
-      e.currentTarget.reset();
+      form.reset();
     } catch (error) {
       toast({
         title: "Error",
