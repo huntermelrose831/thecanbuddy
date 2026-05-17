@@ -18,31 +18,37 @@ const slides = [
 
 const ServiceShowcase = () => {
   const [index, setIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
+    if (isPaused) return;
+
     const id = setInterval(
       () => setIndex((i) => (i + 1) % slides.length),
-      5000
+      5000,
     );
     return () => clearInterval(id);
-  }, []);
+  }, [isPaused]);
+
+  const handleManualChange = (newIndex: number) => {
+    setIndex(newIndex);
+    setIsPaused(true);
+    setTimeout(() => setIsPaused(false), 10000); // Resume after 10 seconds
+  };
 
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="relative rounded-2xl overflow-hidden shadow-glow">
+          <div className="relative rounded-2xl overflow-hidden shadow-glow h-[600px]">
             <img
               src={slides[index].src}
               alt={slides[index].label}
-              className={`w-full h-auto ${
+              className={`w-full h-full ${
                 slides[index].fit === "contain"
                   ? "object-contain bg-white p-8"
                   : "object-cover"
               }`}
-              style={{
-                maxHeight: slides[index].fit === "contain" ? "520px" : "600px",
-              }}
             />
 
             <div className="absolute top-6 left-6 bg-white/90 px-3 py-1 rounded-full text-sm font-semibold text-primary">
@@ -51,17 +57,17 @@ const ServiceShowcase = () => {
 
             <button
               onClick={() =>
-                setIndex((i) => (i - 1 + slides.length) % slides.length)
+                handleManualChange((index - 1 + slides.length) % slides.length)
               }
-              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow"
+              className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow hover:bg-white transition-colors"
               aria-label="Previous"
             >
               <ChevronLeft className="w-5 h-5 text-primary" />
             </button>
 
             <button
-              onClick={() => setIndex((i) => (i + 1) % slides.length)}
-              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow"
+              onClick={() => handleManualChange((index + 1) % slides.length)}
+              className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 rounded-full p-2 shadow hover:bg-white transition-colors"
               aria-label="Next"
             >
               <ChevronRight className="w-5 h-5 text-primary" />
@@ -71,8 +77,8 @@ const ServiceShowcase = () => {
               {slides.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => setIndex(i)}
-                  className={`w-2 h-2 rounded-full ${
+                  onClick={() => handleManualChange(i)}
+                  className={`w-2 h-2 rounded-full transition-colors ${
                     i === index ? "bg-accent" : "bg-white/60"
                   }`}
                   aria-label={`Go to slide ${i + 1}`}

@@ -17,8 +17,8 @@ const ProcessSection = () => {
       setTimeout(() => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
         setIsAnimating(false);
-      }, 500); // Half of the animation duration
-    }, 4000); // Change image every 4 seconds
+      }, 300);
+    }, 5000); // Change image every 5 seconds
 
     return () => clearInterval(interval);
   }, [images.length]);
@@ -30,12 +30,12 @@ const ProcessSection = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Image */}
             <div className="order-2 lg:order-1 flex justify-center">
-              <div className="rounded-2xl overflow-hidden shadow-glow max-w-md w-full relative">
-                <div className="overflow-hidden">
+              <div className="rounded-2xl overflow-hidden shadow-glow max-w-md w-full relative h-[400px] md:h-[500px]">
+                <div className="overflow-hidden h-full">
                   <img
                     src={images[currentImageIndex]}
                     alt="Can Cleaning Process"
-                    className={`w-full h-auto object-cover transition-transform duration-1000 ${
+                    className={`w-full h-full object-cover transition-transform duration-1000 ${
                       isAnimating ? "-translate-x-full" : "translate-x-0"
                     }`}
                     key={currentImageIndex}
