@@ -52,14 +52,6 @@ const ServiceArea = () => {
                 </h3>
                 <div className="grid grid-cols-2 gap-3">
                   {serviceAreas.map((area, index) => {
-                    const comingSoonAreas = [
-                      "Aptos",
-                      "Scotts Valley",
-                      "Capitola",
-                      "Soquel",
-                      "Pleasure Point",
-                    ];
-                    const isComingSoon = comingSoonAreas.includes(area);
                     return (
                       <div
                         key={index}
@@ -68,11 +60,6 @@ const ServiceArea = () => {
                         <CheckCircle className="w-5 h-5 text-accent flex-shrink-0" />
                         <span className="text-sm md:text-base">
                           {area}
-                          {isComingSoon && (
-                            <span className="italic text-muted-foreground ml-2">
-                              coming soon
-                            </span>
-                          )}
                         </span>
                       </div>
                     );
