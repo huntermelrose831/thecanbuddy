@@ -36,7 +36,7 @@ echo -e "${BLUE}♻️  Restarting backend server...${NC}"
 # If using systemd service (recommended)
 # sudo systemctl restart canbuddy
 # Or if using PM2:
-pm2 restart --all
+pm2 restart all
 
 echo -e "${GREEN}✅ Deployment complete!${NC}"
 echo -e "${BLUE}Site should be live at: https://www.thecanbuddy.co${NC}"
