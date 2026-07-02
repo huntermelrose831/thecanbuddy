@@ -92,15 +92,9 @@ const Navbar = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 hover:shadow-glow transition-all duration-300 font-bold text-base px-6 lg:px-8 rounded-lg"
-                asChild
+                onClick={() => scrollTo("contact")}
               >
-                <a
-                  href="https://app.jobatory.com/customer-login"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Login
-                </a>
+                Contact
               </Button>
             </div>
           </div>
@@ -202,15 +196,9 @@ const Navbar = () => {
                 <Button
                   size="lg"
                   className="w-full bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 font-bold text-lg py-6 rounded-xl shadow-lg"
-                  asChild
+                  onClick={() => scrollTo("contact")}
                 >
-                  <a
-                    href="https://app.jobatory.com/customer-login"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Login
-                  </a>
+                  Contact
                 </Button>
               </div>
             </motion.div>
