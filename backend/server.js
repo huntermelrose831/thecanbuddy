@@ -13,6 +13,15 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// Content Security Policy middleware
+app.use((req, res, next) => {
+  res.setHeader(
+    "Content-Security-Policy",
+    "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://googletagmanager.com; connect-src 'self' https://www.googletagmanager.com https://www.google-analytics.com;"
+  );
+  next();
+});
+
 // Contact form endpoint
 app.post("/api/contact", async (req, res) => {
   try {
