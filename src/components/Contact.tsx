@@ -24,24 +24,28 @@ const Contact = () => {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
+
     const data = {
-      firstName: formData.get("firstName"),
-      lastName: formData.get("lastName"),
+      access_key: "58a11362-7906-4aa2-ac9f-deceaedde3d5",
+      subject: "New Service Request - The Can Buddy",
+      from_name: `${formData.get("firstName")} ${formData.get("lastName")}`,
       email: formData.get("email"),
       phone: formData.get("phone"),
       address: formData.get("address"),
       bins: formData.get("bins"),
-      details: formData.get("details"),
+      details: formData.get("details") || "None",
+      ...(foodScrapCount > 0 && { food_scrap_bins: foodScrapCount }),
     };
 
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
 
-      if (!response.ok) throw new Error("Failed to send email");
+      const result = await response.json();
+      if (!result.success) throw new Error("Failed to send email");
 
       toast({
         title: "Thanks — request received!",
