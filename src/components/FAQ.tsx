@@ -100,10 +100,12 @@ const FAQ = () => {
             <p className="text-lg text-muted-foreground">
               Still have questions?{" "}
               <a
-                href="#contact"
+                href="https://thecanbuddy.jobatory.com/home"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-accent font-semibold hover:underline"
               >
-                Contact us
+                Start service online
               </a>{" "}
               - we're here to help!
             </p>

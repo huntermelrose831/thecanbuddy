@@ -1,4 +1,4 @@
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone, Mail, LogIn } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -89,12 +89,22 @@ const Navbar = () => {
                 Contact
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full" />
               </button>
+              <a
+                href="https://thecanbuddy.jobatory.com/auth/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-foreground hover:text-accent transition-colors font-semibold relative group"
+              >
+                <LogIn className="w-4 h-4" />
+                Customer Login
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all group-hover:w-full" />
+              </a>
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 hover:shadow-glow transition-all duration-300 font-bold text-base px-6 lg:px-8 rounded-lg"
-                onClick={() => scrollTo("contact")}
+                onClick={() => window.open("https://thecanbuddy.jobatory.com/home", "_blank")}
               >
-                Contact
+                Start Service
               </Button>
             </div>
           </div>
@@ -172,6 +182,16 @@ const Navbar = () => {
                   >
                     Contact
                   </button>
+                  <a
+                    href="https://thecanbuddy.jobatory.com/auth/login"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 w-full py-3 px-4 text-ocean-blue hover:bg-sky-blue/10 rounded-lg transition-colors font-semibold text-lg"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <LogIn className="w-5 h-5" />
+                    Customer Login
+                  </a>
                 </div>
                 {/* Divider */}
                 <div className="border-t border-border" />
@@ -196,9 +216,9 @@ const Navbar = () => {
                 <Button
                   size="lg"
                   className="w-full bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 font-bold text-lg py-6 rounded-xl shadow-lg"
-                  onClick={() => scrollTo("contact")}
+                  onClick={() => window.open("https://thecanbuddy.jobatory.com/home", "_blank")}
                 >
-                  Contact
+                  Start Service
                 </Button>
               </div>
             </motion.div>

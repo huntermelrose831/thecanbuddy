@@ -72,8 +72,8 @@ const plans = [
 ];
 
 const Rates = () => {
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  const goToJobatory = () => {
+    window.open("https://thecanbuddy.jobatory.com/home", "_blank");
   };
 
   return (
@@ -146,7 +146,7 @@ const Rates = () => {
                     : "bg-primary hover:bg-accent"
                 } transition-all duration-300 font-bold`}
                 size="lg"
-                onClick={scrollToContact}
+                onClick={goToJobatory}
               >
                 Start Service
               </Button>

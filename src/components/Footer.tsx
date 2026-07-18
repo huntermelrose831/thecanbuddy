@@ -32,10 +32,12 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#contact"
+                  href="https://thecanbuddy.jobatory.com/home"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="hover:text-white transition-colors"
                 >
-                  Contact
+                  Start Service
                 </a>
               </li>
               <li>

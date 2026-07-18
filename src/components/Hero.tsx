@@ -7,10 +7,6 @@ const Hero = () => {
   const y1 = useTransform(scrollY, [0, 300], [0, 150]);
   const y2 = useTransform(scrollY, [0, 300], [0, -50]);
 
-  const scrollToContact = () => {
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -185,11 +181,11 @@ const Hero = () => {
             >
               <Button
                 size="lg"
-                onClick={scrollToContact}
+                onClick={() => window.open("https://thecanbuddy.jobatory.com/home", "_blank")}
                 className="w-full sm:w-auto bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 text-white font-bold text-base sm:text-lg px-8 sm:px-10 py-5 sm:py-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 active:scale-95"
               >
                 <CheckCircle2 className="w-5 h-5 mr-2" />
-                Get Started Today
+                Start Service
               </Button>
               <Button
                 size="lg"
