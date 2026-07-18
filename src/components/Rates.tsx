@@ -5,26 +5,25 @@ import { Card } from "@/components/ui/card";
 const plans = [
   {
     name: "Monthly Cleaning",
-    price: "$30",
+    price: "$20",
     period: "for 2 cans",
     description: "Once per month cleaning",
-    promo: "50% OFF first service with code: FirstClean50",
+    promo: null,
     features: [
-      "$30.00 for 2 cans cleaned once per month",
+      "$20.00 for 2 cans cleaned once per month",
       "Any additional can $10.00 each",
-      "50% off your first service",
       "Cancel anytime",
     ],
     popular: true,
   },
   {
     name: "Bi-Monthly Cleaning",
-    price: "$37.50",
+    price: "$27.50",
     period: "for 2 cans",
     description: "Once every other month",
     promo: null,
     features: [
-      "$37.50 for 2 cans cleaned every other month",
+      "$27.50 for 2 cans cleaned every other month",
       "Any additional can $10.00 each",
       "Great balance of value",
     ],
@@ -32,12 +31,12 @@ const plans = [
   },
   {
     name: "Quarterly Cleaning",
-    price: "$45",
+    price: "$35",
     period: "for 2 cans",
     description: "Once every 3 months",
     promo: null,
     features: [
-      "$45.00 for 2 cans cleaned once per quarter",
+      "$35.00 for 2 cans cleaned once per quarter",
       "Any additional can $10.00 each",
       "Perfect for light usage",
     ],
@@ -46,12 +45,12 @@ const plans = [
 
   {
     name: "Bi-Annually Cleaning",
-    price: "$60",
+    price: "$50",
     period: "for 2 cans",
     description: "Twice per year",
     promo: null,
     features: [
-      "$60.00 for 2 cans cleaned twice per year",
+      "$50.00 for 2 cans cleaned twice per year",
       "Any additional can $10.00 each",
       "No promo discount on this plan",
     ],
@@ -59,12 +58,12 @@ const plans = [
   },
   {
     name: "One Time Cleaning",
-    price: "$75",
+    price: "$65",
     period: "for 2 cans",
     description: "One-time deep clean",
     promo: null,
     features: [
-      "$75.00 for 2 cans cleaned one time",
+      "$65.00 for 2 cans cleaned one time",
       "Any additional can $10.00 each",
       "$50 credit if you upgrade to recurring plan within 3 months",
     ],
@@ -86,7 +85,7 @@ const Rates = () => {
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Simple pricing, no surprises — starts at{" "}
-            <span className="text-accent font-extrabold">$30</span> for 2 cans.
+            <span className="text-accent font-extrabold">$20</span> for 2 cans.
           </p>
         </div>
 
@@ -163,12 +162,7 @@ const Rates = () => {
           <p className="text-muted-foreground text-lg">
             Optional food-scrap bins:{" "}
             <span className="text-accent font-extrabold">$5.00 each</span>{" "}
-            (optional add-on)
-          </p>
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            Monthly plan eligible for 50% off first service. One-time cleaning
-            includes $50 credit towards a recurring plan if you upgrade within 3
-            months.
+            
           </p>
         </div>
       </div>

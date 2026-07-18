@@ -23,10 +23,10 @@ const ServiceArea = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12 space-y-4">
             <h2 className="text-4xl md:text-5xl font-bold text-primary">
-              Service Areas
+              Service Area
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Proudly serving Santa Cruz County and surrounding areas
+              Proudly serving Santa Cruz County
             </p>
           </div>
 
@@ -65,14 +65,7 @@ const ServiceArea = () => {
                     );
                   })}
                 </div>
-                <div className="mt-8 p-4 bg-secondary/50 rounded-lg">
-                  <p className="text-sm text-muted-foreground">
-                    <strong className="text-primary">
-                      Don't see your area?
-                    </strong>{" "}
-                    Contact us! We're always expanding our service zones.
-                  </p>
-                </div>
+                
               </div>
             </div>
           </Card>
