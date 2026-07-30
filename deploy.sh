@@ -1,8 +1,7 @@
 #!/bin/bash
 
 # Deploy script for The Can Buddy
-# This script pulls the latest code, installs dependencies, builds the frontend,
-# and restarts the backend server
+# This script pulls the latest code, installs dependencies, and builds the frontend
 
 set -e  # Exit on error
 
@@ -26,17 +25,6 @@ npm install
 
 echo -e "${BLUE}🔨 Building frontend...${NC}"
 npm run build
-
-echo -e "${BLUE}📦 Installing backend dependencies...${NC}"
-cd backend
-npm install
-cd ..
-
-echo -e "${BLUE}♻️  Restarting backend server...${NC}"
-# If using systemd service (recommended)
-# sudo systemctl restart canbuddy
-# Or if using PM2:
-pm2 restart all
 
 echo -e "${GREEN}✅ Deployment complete!${NC}"
 echo -e "${BLUE}Site should be live at: https://www.thecanbuddy.co${NC}"
