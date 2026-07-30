@@ -28,12 +28,12 @@ const FAQ = () => {
     {
       question: "Do you use harsh chemicals?",
       answer:
-        "No harsh chemicals needed! Our high-pressure, 200° hot water system effectively eliminates bacteria, odors, and grime using heat and pressure, making it safe for your family and the environment.",
+        "No harsh chemicals needed! Our high-pressure, 200° hot water system effectively eliminates bacteria, odors, and grime using heat and pressure, making it safe for your family and the environment. We even leave your cans smelling good with a lemon scent!",
     },
     {
       question: "Can I clean multiple bins?",
       answer:
-        "Absolutely! Our base pricing includes your first bin, and additional bins are just $9 each. Perfect for homes or businesses with multiple trash or recycling containers.",
+        "Absolutely! Our base pricing includes your first two bins, and additional bins are just $10 each. Perfect for homes or businesses with multiple trash or recycling containers.",
     },
     {
       question: "What if I'm not satisfied with the service?",

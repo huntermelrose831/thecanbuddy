@@ -58,7 +58,7 @@ const MobileQuickAction = () => {
                   </motion.button>
 
                   <motion.a
-                    href="tel:+18314402247"
+                    href="tel:+18666985458"
                     initial={{ opacity: 0, scale: 0.5, y: 20 }}
                     animate={{ opacity: 1, scale: 1, y: 0 }}
                     exit={{ opacity: 0, scale: 0.5, y: 20 }}
