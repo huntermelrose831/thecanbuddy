@@ -9,7 +9,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-2">
                 <img
-                  src="/images/wavelogo.jpeg"
+                  src="/images/upscaledLogo.png"
                   alt="The Can Buddy Logo"
                   className="w-12 h-12 object-contain"
                 />

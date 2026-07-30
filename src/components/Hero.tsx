@@ -1,8 +1,14 @@
+import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle2, Clock, Leaf } from "lucide-react";
 
 const Hero = () => {
+  const bgVideoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (bgVideoRef.current) bgVideoRef.current.playbackRate = 0.5;
+  }, []);
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 300], [0, 150]);
   const y2 = useTransform(scrollY, [0, 300], [0, -50]);
@@ -39,9 +45,25 @@ const Hero = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-16 sm:pt-24 sm:pb-20">
+      {/* Intro Video Background */}
+      <video
+        ref={bgVideoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+        style={{ transform: "scale(0.85)", transformOrigin: "center" }}
+      >
+        <source src="/videos/introvideo.mp4" type="video/mp4" />
+      </video>
+
+      {/* Video overlay for readability */}
+      <div className="absolute inset-0 bg-white/65" />
+
       {/* Animated Gradient Background with Depth */}
       <motion.div
-        className="absolute inset-0 bg-gradient-to-br from-sky-blue/50 via-sky-blue/30 to-ocean-blue/20"
+        className="absolute inset-0 bg-gradient-to-br from-sky-blue/40 via-sky-blue/20 to-ocean-blue/15"
         style={{ y: y1 }}
       />
 

@@ -42,7 +42,7 @@ const BrandShowcase = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out" />
 
               <img
-                src="/images/wavelogo2.png"
+                src="/images/textlogo.png"
                 alt="The Can Buddy - Santa Cruz Trash Can Cleaning"
                 className="w-48 sm:w-56 md:w-64 lg:w-72 h-auto object-contain relative z-10"
               />
@@ -54,7 +54,7 @@ const BrandShowcase = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-in-out delay-100" />
 
               <img
-                src="/images/wavelogo3.png"
+                src="/images/upscaledimage1.png"
                 alt="The Can Buddy Logo"
                 className="w-48 sm:w-56 md:w-64 lg:w-72 h-auto object-contain relative z-10"
               />

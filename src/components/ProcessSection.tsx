@@ -2,10 +2,15 @@ import { useState, useEffect } from "react";
 
 const ProcessSection = () => {
   const images = [
+    "/images/mattCleaningCans.jpg",
+    "/images/cleaningprocess1.jpg",
+    "/images/PXL_20260729_171021006.jpg",
     "/images/Before-After-Pails3.png",
     "/images/before-afterv2.jpeg",
     "/images/spraying.png",
     "/images/bincleaningprocess.jpeg",
+    "/images/mounted.jpg",
+    "/images/onthetruck.jpg",
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);

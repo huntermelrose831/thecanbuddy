@@ -52,12 +52,12 @@ const Navbar = () => {
             >
               <div className="flex items-center">
                 <img
-                  src="/images/wavelogo2.jpg"
+                  src="/images/textlogo.png"
                   alt="The Can Buddy Logo"
                   className="h-16 sm:h-20 w-auto mb-[5px] mix-blend-multiply"
                 />
                 <img
-                  src="/images/wavelogo3.jpg"
+                  src="/images/upscaledimage1.png"
                   alt="The Can Buddy Logo"
                   className="h-16 sm:h-20 w-auto mb-[5px] mix-blend-multiply"
                 />
