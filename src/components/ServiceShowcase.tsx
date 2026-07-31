@@ -15,9 +15,7 @@ const slides: Slide[] = [
   { type: "image", src: "/images/onthetruck.jpg", label: "On the Truck", fit: "cover" },
   { type: "image", src: "/images/Before-After-Pails3.png", label: "Before & After", fit: "cover" },
   { type: "image", src: "/images/before-afterv2.jpeg", label: "Results", fit: "cover" },
-  { type: "image", src: "/images/spraying.png", label: "Deep Clean Spray", fit: "cover" },
   { type: "image", src: "/images/boardwalk.png", label: "Boardwalk Cleaning", fit: "cover" },
-  { type: "image", src: "/images/bincleaningprocess.jpeg", label: "Bin Cleaning", fit: "cover" },
   { type: "image", src: "/images/upscaledLogo.png", label: "The Can Buddy", fit: "contain" },
 ];
 

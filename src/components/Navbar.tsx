@@ -59,7 +59,7 @@ const Navbar = () => {
                 <img
                   src="/images/upscaledimage1.png"
                   alt="The Can Buddy Logo"
-                  className="h-16 sm:h-20 w-auto mb-[5px] mix-blend-multiply"
+                  className="h-16 sm:h-20 w-auto mb-[5px] mt-[5px] mix-blend-multiply"
                 />
               </div>
               <span className="text-xl sm:text-2xl font-bold text-primary hidden xs:inline">
