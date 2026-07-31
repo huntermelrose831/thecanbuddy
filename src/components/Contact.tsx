@@ -81,9 +81,9 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-lg text-primary mb-1">Phone</h3>
                   <a href="tel:+18666985458" className="text-muted-foreground hover:text-accent font-medium">
-                    (866) 698-5458
+                    (831)-331-6174
                   </a>
-                  <p className="text-sm text-muted-foreground mt-1">Mon–Sat: 8am – 6pm</p>
+                  <p className="text-sm text-muted-foreground mt-1">Mon–Sat: 9am – 6pm</p>
                 </div>
               </div>
             </Card>
@@ -123,7 +123,7 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold text-lg text-primary mb-1">Business Hours</h3>
                   <p className="text-muted-foreground">Monday – Friday</p>
-                  <p className="text-sm text-muted-foreground mt-1">8:00 AM – 3:00 PM</p>
+                  <p className="text-sm text-muted-foreground mt-1">9:00 AM – 3:00 PM</p>
                 </div>
               </div>
             </Card>
