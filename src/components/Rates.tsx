@@ -159,11 +159,6 @@ const Rates = () => {
             Additional cans:{" "}
             <span className="text-accent font-extrabold">$10.00 each</span>
           </p>
-          <p className="text-muted-foreground text-lg">
-            Optional food-scrap bins:{" "}
-            <span className="text-accent font-extrabold">$5.00 each</span>{" "}
-            
-          </p>
         </div>
       </div>
     </section>

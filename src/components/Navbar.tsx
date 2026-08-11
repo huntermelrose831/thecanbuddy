@@ -198,11 +198,11 @@ const Navbar = () => {
                 {/* Contact Info */}
                 <div className="space-y-3">
                   <a
-                    href="tel:+18666985458"
+                    href="tel:+18313316174"
                     className="flex items-center gap-3 py-2 px-4 text-ocean-blue hover:bg-sky-blue/10 rounded-lg transition-colors"
                   >
                     <Phone className="w-5 h-5" />
-                    <span className="font-medium">(866) 698-5458</span>
+                    <span className="font-medium">(831) 331-6174</span>
                   </a>
                   <a
                     href="mailto:thecanbuddy8@gmail.com"

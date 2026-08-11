@@ -68,7 +68,6 @@ const Reviews = () => {
               style={{ clipPath: "inset(0 20% 0 0)" }}
             />
             <span className="text-2xl font-bold text-primary ml-2">4.8</span>
-            <span className="text-muted-foreground ml-1">from 7+ reviews</span>
           </div>
         </div>
 
