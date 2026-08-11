@@ -114,7 +114,7 @@ const WhyChooseUs = () => {
               </p>
             </div>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Join 7+ happy customers in Santa Cruz County who've discovered the
+              Join the happy customers in Santa Cruz County who've discovered the
               difference a clean trash can makes!
             </p>
           </div>
