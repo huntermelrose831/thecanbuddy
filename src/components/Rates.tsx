@@ -65,7 +65,7 @@ const plans = [
     features: [
       "$65.00 for 2 cans cleaned one time",
       "Any additional can $10.00 each",
-      "$50 credit if you upgrade to recurring plan within 3 months",
+      "No recurring commitment required",
     ],
     popular: false,
   },
