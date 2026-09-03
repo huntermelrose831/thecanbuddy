@@ -6,8 +6,8 @@ type Slide =
   | { type: "video"; src: string; label: string; poster: string };
 
 const slides: Slide[] = [
-  { type: "image", src: "/images/mattCleaningCans.jpg", label: "Matt at Work", fit: "cover" },
   { type: "video", src: "/videos/spraydownvideo.mp4", label: "High-Pressure Spray Down", poster: "/images/spraying.png" },
+  { type: "image", src: "/images/mattCleaningCans.jpg", label: "Matt at Work", fit: "cover" },
   { type: "image", src: "/images/cleaningprocess1.jpg", label: "Cleaning Process", fit: "cover" },
   { type: "image", src: "/images/PXL_20260729_171021006.jpg", label: "In Action", fit: "cover" },
   { type: "video", src: "/videos/cleaningprocessvideo.mp4", label: "Full Cleaning Process", poster: "/images/cleaningprocess1.jpg" },
