@@ -3,10 +3,10 @@ import { ChevronLeft, ChevronRight, Play } from "lucide-react";
 
 type Slide =
   | { type: "image"; src: string; label: string; fit: "cover" | "contain" }
-  | { type: "video"; src: string; label: string; poster: string };
+  | { type: "video"; src: string; label: string; poster?: string };
 
 const slides: Slide[] = [
-  { type: "video", src: "/videos/spraydownvideo.mp4", label: "High-Pressure Spray Down", poster: "/images/spraying.png" },
+  { type: "video", src: "/videos/spraydownvideo.mp4", label: "High-Pressure Spray Down" },
   { type: "image", src: "/images/mattCleaningCans.jpg", label: "Matt at Work", fit: "cover" },
   { type: "image", src: "/images/cleaningprocess1.jpg", label: "Cleaning Process", fit: "cover" },
   { type: "image", src: "/images/PXL_20260729_171021006.jpg", label: "In Action", fit: "cover" },
@@ -70,7 +70,7 @@ const ServiceShowcase = () => {
                 ref={videoRef}
                 key={currentSlide.src}
                 src={currentSlide.src}
-                poster={currentSlide.poster}
+                poster={currentSlide.poster || undefined}
                 autoPlay
                 muted
                 playsInline
