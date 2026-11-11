@@ -27,7 +27,7 @@ const MobileQuickAction = () => {
   };
 
   const goToJobatory = () => {
-    window.open("https://thecanbuddy.jobatory.com/home", "_blank");
+    window.open("/start-service", "_blank");
     setIsExpanded(false);
   };
 

@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Clock, CheckCircle2, CalendarCheck, UserCheck, Bel
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
-const JOBATORY_URL = "https://thecanbuddy.jobatory.com/home";
+const JOBATORY_URL = "/start-service";
 
 const Contact = () => {
   return (

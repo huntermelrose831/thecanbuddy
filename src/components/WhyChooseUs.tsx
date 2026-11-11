@@ -110,7 +110,7 @@ const WhyChooseUs = () => {
             <div className="inline-block bg-gradient-ocean text-white px-8 py-4 rounded-full shadow-glow">
               <p className="text-lg font-semibold">
                 Ready for a fresher, cleaner home? Let The Can Buddy handle the
-                dirty work! 🗑️✨
+                dirty work!
               </p>
             </div>
             <p className="text-muted-foreground max-w-2xl mx-auto">

@@ -102,7 +102,7 @@ const Navbar = () => {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 hover:shadow-glow transition-all duration-300 font-bold text-base px-6 lg:px-8 rounded-lg"
-                onClick={() => window.open("https://thecanbuddy.jobatory.com/home", "_blank")}
+                onClick={() => window.open("/start-service", "_blank")}
               >
                 Start Service
               </Button>
@@ -216,7 +216,7 @@ const Navbar = () => {
                 <Button
                   size="lg"
                   className="w-full bg-gradient-to-r from-ocean-blue to-sky-blue hover:from-ocean-blue/90 hover:to-sky-blue/90 font-bold text-lg py-6 rounded-xl shadow-lg"
-                  onClick={() => window.open("https://thecanbuddy.jobatory.com/home", "_blank")}
+                  onClick={() => window.open("/start-service", "_blank")}
                 >
                   Start Service
                 </Button>
