@@ -159,6 +159,24 @@ const Rates = () => {
             Additional cans:{" "}
             <span className="text-accent font-extrabold">$10.00 each</span>
           </p>
+
+          <Card className="max-w-xl mx-auto p-6 bg-ocean-light/10 border border-accent/30">
+            <p className="text-lg font-semibold text-primary mb-1">
+              Only have one can?
+            </p>
+            <p className="text-muted-foreground mb-4">
+              Don&apos;t see the option you need? We&apos;ve got you covered —
+              single can cleaning is available for{" "}
+              <span className="text-accent font-extrabold">$10.00</span>.
+            </p>
+            <Button
+              className="bg-primary hover:bg-accent transition-all duration-300 font-bold"
+              size="lg"
+              onClick={goToJobatory}
+            >
+              Start Service
+            </Button>
+          </Card>
         </div>
       </div>
     </section>
