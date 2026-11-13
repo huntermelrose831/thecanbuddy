@@ -76,6 +76,13 @@ const Rates = () => {
     window.open("/start-service", "_blank");
   };
 
+  const goToSingleCanJobatory = () => {
+    window.open(
+      "https://thecanbuddy.jobatory.com/home?offer_id=1&price_list=8",
+      "_blank"
+    );
+  };
+
   return (
     <section id="rates" className="py-20 bg-background">
       <div className="container mx-auto px-4">
@@ -172,7 +179,7 @@ const Rates = () => {
             <Button
               className="bg-primary hover:bg-accent transition-all duration-300 font-bold"
               size="lg"
-              onClick={goToJobatory}
+              onClick={goToSingleCanJobatory}
             >
               Start Service
             </Button>
