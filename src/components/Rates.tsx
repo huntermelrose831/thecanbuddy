@@ -181,7 +181,7 @@ const Rates = () => {
               size="lg"
               onClick={goToSingleCanJobatory}
             >
-              Start Service
+              Click here to sign upif you only have one can
             </Button>
           </Card>
         </div>
