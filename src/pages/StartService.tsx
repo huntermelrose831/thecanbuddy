@@ -1,6 +1,12 @@
 import { useEffect } from "react";
 import { Loader2, CheckCircle2 } from "lucide-react";
 
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
 const JOBATORY_URL = "https://thecanbuddy.jobatory.com/home";
 const REDIRECT_DELAY_MS = 1500;
 
@@ -8,6 +14,10 @@ const REDIRECT_DELAY_MS = 1500;
 // (e.g. for Google Ads) before handing the customer off to Jobatory to book.
 const StartService = () => {
   useEffect(() => {
+    window.gtag?.("event", "conversion", {
+      send_to: "AW-18570065158/5a4nCKu00rYdEIbq8pZF",
+    });
+
     const timer = setTimeout(() => {
       window.location.replace(JOBATORY_URL);
     }, REDIRECT_DELAY_MS);
