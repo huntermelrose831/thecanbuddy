@@ -18,12 +18,12 @@ const plans = [
   },
   {
     name: "Bi-Monthly Cleaning",
-    price: "$27.50",
+    price: "$30",
     period: "for 2 cans",
     description: "Once every other month",
     promo: null,
     features: [
-      "$27.50 for 2 cans cleaned every other month",
+      "$30.00 for 2 cans cleaned every other month",
       "Any additional can $10.00 each",
       "Great balance of value",
     ],
@@ -31,12 +31,12 @@ const plans = [
   },
   {
     name: "Quarterly Cleaning",
-    price: "$35",
+    price: "$40",
     period: "for 2 cans",
     description: "Once every 3 months",
     promo: null,
     features: [
-      "$35.00 for 2 cans cleaned once per quarter",
+      "$40.00 for 2 cans cleaned once per quarter",
       "Any additional can $10.00 each",
       "Perfect for light usage",
     ],
@@ -58,12 +58,12 @@ const plans = [
   },
   {
     name: "One Time Cleaning",
-    price: "$65",
+    price: "$60",
     period: "for 2 cans",
     description: "One-time deep clean",
     promo: null,
     features: [
-      "$65.00 for 2 cans cleaned one time",
+      "$60.00 for 2 cans cleaned one time",
       "Any additional can $10.00 each",
       "No recurring commitment required",
     ],
