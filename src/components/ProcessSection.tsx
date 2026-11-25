@@ -29,7 +29,7 @@ const ProcessSection = () => {
   }, [images.length]);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-ocean-blue to-deep-blue text-white">
+    <section id="process" className="py-20 bg-gradient-to-br from-ocean-blue to-deep-blue text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
